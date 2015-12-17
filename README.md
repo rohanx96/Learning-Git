@@ -20,4 +20,5 @@ Simple (default set using push.config simple): Gitwill push changes to the branc
 
 Branching allows you to work on your code and make changes but you may dicard the changes if they do not work by not pushing the changes to master branch. Thus it is like making a copy of your code and then working on it.
 
-i will be pushing this result using simple and hence this result should not be available in the test-branch
+i will be pushing this result using simple and hence this result should not be available in the test-branch.
+Could not push using simple problem of no upstream set. So merged with master and then pushed master. In merging all commits are added to master and you just push it.
