@@ -1,0 +1,12 @@
+Patching
+
+Patch is a text file, whose contents are similar to Git diff, but along with code, it also has metadata about commits; e.g., commit ID, date, commit message, etc. We can create a patch from commits and other people can apply them to their repository. The Git format-patch command is used to create a patch for the latest commit. If you want to create a patch for a specific commit, then use COMMIT_ID with the format-patch command.
+git commit -m "Added my_strcat function"
+git format-patch -1
+0001-Added-my_strcat-function.patch
+
+The above command creates .patch files inside the current working directory. Tom can use this patch to modify his files. Git provides two commands to apply patches git amand git apply, respectively. Git apply modifies the local files without creating commit, while git am modifies the file and creates commit as well.
+git apply 0001-Added-my_strcat-function.patch
+
+
+

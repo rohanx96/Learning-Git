@@ -1,0 +1,53 @@
+Advanced Git log
+
+Oneline
+The --oneline flag condenses each commit to a single line. By default, it displays only the commit ID and the first line of the commit message. Your typical git log --oneline output will look something like this:
+
+0e25143 Merge branch 'feature'
+ad8621a Fix a bug in the feature
+16b36c6 Add a new feature
+23ad9ad Add the initial code base
+This is very useful for getting a high-level overview of your project.
+
+Decorating
+Many times it’s useful to know which branch or tag each commit is associated with. The --decorate flag makes git log display all of the references (e.g., branches, tags, etc) that point to each commit.
+
+This can be combined with other configuration options. For example, running git log --oneline --decorate will format the commit history like so:
+
+0e25143 (HEAD, master) Merge branch 'feature'
+ad8621a (feature) Fix a bug in the feature
+16b36c6 Add a new feature
+23ad9ad (tag: v0.9) Add the initial code base
+Branches, tags, HEAD, and the commit history are almost all of the information contained in your Git repository, so this gives you a more complete view of the logical structure of your repository.
+
+Diffs
+The git log command includes many options for displaying diffs with each commit. Two of the most common options are --stat and -p.
+
+The Shortlog
+The git shortlog command is a special version of git log intended for creating release announcements. It groups each commit by author and displays the first line of each commit message. This is an easy way to see who’s been working on what.
+
+Graphs
+The --graph option draws an ASCII graph representing the branch structure of the commit history. This is commonly used in conjunction with the --oneline and --decorate commands to make it easier to see which commit belongs to which branch:
+
+git log --graph --oneline --decorate
+*   0e25143 (HEAD, master) Merge branch 'feature'
+|\  
+| * 16b36c6 Fix a bug in the new feature
+| * 23ad9ad Start a new feature
+* | ad8621a Fix a critical security issue
+|/  
+* 400e4b7 Fix typos in the documentation
+* 160e224 Add the initial code base
+The asterisk shows which branch the commit was on, so the above graph tells us that the 23ad9ad and 16b36c6 commits are on a topic branch and the rest are on the master branch.
+
+Filtering Merge Commits
+By default, git log includes merge commits in its output. But, if your team has an always-merge policy (that is, you merge upstream changes into topic branches instead of rebasing the topic branch onto the upstream branch), you’ll have a lot of extraneous merge commits in your project history.
+
+You can prevent git log from displaying these merge commits by passing the --no-merges flag:
+
+git log --no-merges
+On the other hand, if you’re only interested in the merge commits, you can use the --merges flag:
+
+git log --merges
+This returns all commits that have at least two parents.
+

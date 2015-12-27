@@ -1,0 +1,14 @@
+git stash
+
+In Git, the stash operation takes your modified tracked files, stages changes, and saves them on a stack of unfinished changes that you can reapply at any time.
+Suppose you are implementing a new feature for your product. Your code is in progress and suddenly a customer escalation comes. Now, you want to switch branches for customer escalation, but you don’t want to commit what you’ve been working on yet; so you’ll stash the changes. To push a new stash onto your stack, run the git stash command.
+[jerry@CentOS project]$ git stash
+Saved working directory and index state WIP on master: e86f062 Added my_strcpy function
+HEAD is now at e86f062 Added my_strcpy function
+
+Now, your working directory is clean and all the changes are saved on a stack. Now you can safely switch the branch and work elsewhere. We can view a list of stashed changes by using the git stash list command.
+[jerry@CentOS project]$ git stash list
+stash@{0}: WIP on master: e86f062 Added my_strcpy function
+
+Suppose you have resolved the customer escalation and you are back on your new feature looking for your half-done code, just execute the git stash pop command, to remove the changes from the stack and place them in the current working directory.
+
