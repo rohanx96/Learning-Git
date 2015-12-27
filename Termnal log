@@ -1,0 +1,1220 @@
+rose@rose-VPCEH15EN:~/Dev/android-studio/bin$ sudo apt-get install git
+[sudo] password for rose: 
+Sorry, try again.
+[sudo] password for rose: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  efibootmgr firefox-locale-en libatkmm-1.6-1 libcairomm-1.0-1
+  libpangomm-1.4-1 libtimezonemap1 linux-headers-3.19.0-26
+  linux-headers-3.19.0-26-generic linux-image-3.19.0-26-generic
+  linux-image-extra-3.19.0-26-generic sbsigntool secureboot-db
+Use 'apt-get autoremove' to remove them.
+The following extra packages will be installed:
+  git-man liberror-perl
+Suggested packages:
+  git-daemon-run git-daemon-sysvinit git-doc git-el git-email git-gui gitk
+  gitweb git-arch git-bzr git-cvs git-mediawiki git-svn
+The following NEW packages will be installed:
+  git git-man liberror-perl
+0 upgraded, 3 newly installed, 0 to remove and 40 not upgraded.
+Need to get 3,421 kB of archives.
+After this operation, 21.9 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://in.archive.ubuntu.com/ubuntu/ trusty/main liberror-perl all 0.17-1.1 [21.1 kB]
+Get:2 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main git-man all 1:1.9.1-1ubuntu0.2 [699 kB]
+Get:3 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main git amd64 1:1.9.1-1ubuntu0.2 [2,701 kB]
+Fetched 3,421 kB in 57s (59.3 kB/s)                                            
+Selecting previously unselected package liberror-perl.
+(Reading database ... 241094 files and directories currently installed.)
+Preparing to unpack .../liberror-perl_0.17-1.1_all.deb ...
+Unpacking liberror-perl (0.17-1.1) ...
+Selecting previously unselected package git-man.
+Preparing to unpack .../git-man_1%3a1.9.1-1ubuntu0.2_all.deb ...
+Unpacking git-man (1:1.9.1-1ubuntu0.2) ...
+Selecting previously unselected package git.
+Preparing to unpack .../git_1%3a1.9.1-1ubuntu0.2_amd64.deb ...
+Unpacking git (1:1.9.1-1ubuntu0.2) ...
+Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+Setting up liberror-perl (0.17-1.1) ...
+Setting up git-man (1:1.9.1-1ubuntu0.2) ...
+Setting up git (1:1.9.1-1ubuntu0.2) ...
+rose@rose-VPCEH15EN:~/Dev/android-studio/bin$ cd ..
+rose@rose-VPCEH15EN:~/Dev/android-studio$ cd /home/ros
+bash: cd: /home/ros: No such file or directory
+rose@rose-VPCEH15EN:~/Dev/android-studio$ cd /home/rose/AndroidStudioProjects/
+rose@rose-VPCEH15EN:~/AndroidStudioProjects$ cd QuickWallet-quickblox/
+rose@rose-VPCEH15EN:~/AndroidStudioProjects/QuickWallet-quickblox$ git init
+Initialized empty Git repository in /home/rose/AndroidStudioProjects/QuickWallet-quickblox/.git/
+rose@rose-VPCEH15EN:~/AndroidStudioProjects/QuickWallet-quickblox$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.gitignore
+	.idea/
+	QuickWallet-quickblox.iml
+	QuickWallet.iml
+	app/
+	basketballnews_keystore.jks
+	build.gradle
+	gradle.properties
+	gradle/
+	gradlew
+	gradlew.bat
+	java_pid5308.hprof
+	quickblox-android-sdk-chat-2.3.1/
+	quickblox-android-sdk-core-2.3.1/
+	quickblox-android-sdk-messages-2.3.1/
+	settings.gradle
+
+nothing added to commit but untracked files present (use "git add" to track)
+rose@rose-VPCEH15EN:~/AndroidStudioProjects/QuickWallet-quickblox$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+rose@rose-VPCEH15EN:~/AndroidStudioProjects/QuickWallet-quickblox$ cd /home/rose/GitHub
+bash: cd: /home/rose/GitHub: No such file or directory
+rose@rose-VPCEH15EN:~/AndroidStudioProjects/QuickWallet-quickblox$ cd /home/rose/
+rose@rose-VPCEH15EN:~$ mkdir GitHub
+rose@rose-VPCEH15EN:~$ cd GitHub/
+rose@rose-VPCEH15EN:~/GitHub$ git init
+Initialized empty Git repository in /home/rose/GitHub/.git/
+rose@rose-VPCEH15EN:~/GitHub$ git help
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p|--paginate|--no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+The most commonly used git commands are:
+   add        Add file contents to the index
+   bisect     Find by binary search the change that introduced a bug
+   branch     List, create, or delete branches
+   checkout   Checkout a branch or paths to the working tree
+   clone      Clone a repository into a new directory
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   fetch      Download objects and refs from another repository
+   grep       Print lines matching a pattern
+   init       Create an empty Git repository or reinitialize an existing one
+   log        Show commit logs
+   merge      Join two or more development histories together
+   mv         Move or rename a file, a directory, or a symlink
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+   rebase     Forward-port local commits to the updated upstream head
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+   show       Show various types of objects
+   status     Show the working tree status
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+'git help -a' and 'git help -g' lists available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+rose@rose-VPCEH15EN:~/GitHub$ git clone https://github.com/rohanx96/Learning-Git.git
+Cloning into 'Learning-Git'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+rose@rose-VPCEH15EN:~/GitHub$ ls
+Learning-Git
+rose@rose-VPCEH15EN:~/GitHub$ cd L
+bash: cd: L: No such file or directory
+rose@rose-VPCEH15EN:~/GitHub$ cd Learning-Git/
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ ls
+README.md
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git init
+Reinitialized existing Git repository in /home/rose/GitHub/Learning-Git/.git/
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ gedit README.md 
+
+
+** (gedit:11940): WARNING **: Couldn't connect to accessibility bus: Failed to connect to socket /tmp/dbus-z1cgC7dOWz: Connection refused
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ 
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md~
+
+no changes added to commit (use "git add" and/or "git commit -a")
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git add README.md
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md~
+
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git commit -m "My first commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'rose@rose-VPCEH15EN.(none)')
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git config --global user.email "rohanx96@gmail.com"
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git config --global user.name "rOhanX96"
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git commit -m "My first commit"
+[master bde704b] My first commit
+ 1 file changed, 2 insertions(+)
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md~
+
+nothing added to commit but untracked files present (use "git add" to track)
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ gedit README.md
+
+** (gedit:12143): WARNING **: Couldn't connect to accessibility bus: Failed to connect to socket /tmp/dbus-z1cgC7dOWz: Connection refused
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md~
+
+no changes added to commit (use "git add" and/or "git commit -a")
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git commit -m "Push changes"
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+	modified:   README.md
+
+Untracked files:
+	README.md~
+
+no changes added to commit
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md~
+
+no changes added to commit (use "git add" and/or "git commit -a")
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git add README.md
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md~
+
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git commit -m "Push changes"
+[master 01f2524] Push changes
+ 1 file changed, 3 insertions(+)
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md~
+
+nothing added to commit but untracked files present (use "git add" to track)
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ gedit README.md
+
+** (gedit:12354): WARNING **: Couldn't connect to accessibility bus: Failed to connect to socket /tmp/dbus-z1cgC7dOWz: Connection refused
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md~
+
+no changes added to commit (use "git add" and/or "git commit -a")
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git commit -m "Staging commits"
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+	modified:   README.md
+
+Untracked files:
+	README.md~
+
+no changes added to commit
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': rOhanX96
+Password for 'https://rOhanX96@github.com': 
+Counting objects: 8, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 589 bytes | 0 bytes/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+To https://github.com/rohanx96/Learning-Git.git
+   a76c299..01f2524  master -> master
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md~
+
+no changes added to commit (use "git add" and/or "git commit -a")
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git add README.md
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md~
+
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ gedit README.md
+
+** (gedit:12731): WARNING **: Couldn't connect to accessibility bus: Failed to connect to socket /tmp/dbus-z1cgC7dOWz: Connection refused
+^Z
+[1]+  Stopped                 gedit README.md
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   README.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md~
+
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git add README.md
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git commit -m "Result"
+[master 85dab5a] Result
+ 1 file changed, 5 insertions(+)
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md~
+
+nothing added to commit but untracked files present (use "git add" to track)
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': rOhanX96
+Password for 'https://rOhanX96@github.com': 
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 524 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/rohanx96/Learning-Git.git
+   01f2524..85dab5a  master -> master
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ mkdir TestFolder
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md~
+
+nothing added to commit but untracked files present (use "git add" to track)
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ cd TestFolder/
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git/TestFolder$ gedit secondFile
+
+** (gedit:13155): WARNING **: Couldn't connect to accessibility bus: Failed to connect to socket /tmp/dbus-z1cgC7dOWz: Connection refused
+^C
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git/TestFolder$ gedit secondFile
+[1]+  Killed                  gedit README.md  (wd: ~/GitHub/Learning-Git)
+(wd now: ~/GitHub/Learning-Git/TestFolder)
+
+** (gedit:13195): WARNING **: Couldn't connect to accessibility bus: Failed to connect to socket /tmp/dbus-z1cgC7dOWz: Connection refused
+^C
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git/TestFolder$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	../README.md~
+	./
+
+nothing added to commit but untracked files present (use "git add" to track)
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git/TestFolder$ ls
+secondFile
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git/TestFolder$ cd ..
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md~
+	TestFolder/
+
+nothing added to commit but untracked files present (use "git add" to track)
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ ls TestFolder
+secondFile
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md~
+	TestFolder/
+
+nothing added to commit but untracked files present (use "git add" to track)
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git add TestFolder
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   TestFolder/secondFile
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md~
+
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git commit -m "new directory"
+[master dc84110] new directory
+ 1 file changed, 1 insertion(+)
+ create mode 100644 TestFolder/secondFile
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': rOhanX96
+Password for 'https://rOhanX96@github.com': 
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 404 bytes | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/rohanx96/Learning-Git.git
+   85dab5a..dc84110  master -> master
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git checkout -b test-brach
+Switched to a new branch 'test-brach'
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ gedit README.md
+
+** (gedit:13528): WARNING **: Couldn't connect to accessibility bus: Failed to connect to socket /tmp/dbus-z1cgC7dOWz: Connection refused
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git status
+On branch test-brach
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md~
+
+no changes added to commit (use "git add" and/or "git commit -a")
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git checkout main
+error: pathspec 'main' did not match any file(s) known to git.
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git checkout main-branch
+error: pathspec 'main-branch' did not match any file(s) known to git.
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git checkout master
+M	README.md
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git diff master test-branch
+fatal: ambiguous argument 'test-branch': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git diff master test-brach
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git checkout -b test-branch
+M	README.md
+Switched to a new branch 'test-branch'
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git commit -m "First commit in new branch"
+On branch test-branch
+Changes not staged for commit:
+	modified:   README.md
+
+Untracked files:
+	README.md~
+
+no changes added to commit
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git add README.md
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git commit -m "First commit in new branch"
+[test-branch ebeb8c4] First commit in new branch
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git diff master test-branch
+diff --git a/README.md b/README.md
+index 31b67b1..39e8be5 100644
+--- a/README.md
++++ b/README.md
+@@ -5,7 +5,9 @@ My first attempt at Git Version Control
+ Learning the basics of Git. Committing and pushing. Previous line committed but not pushed.
+ Will now push the changes.
+ 
+-confusion of staging before committing. Required me to add the file again after the first commit to make the second commit. will try again.
++**confusion of staging before committing. Required me to add the file again after the first commit to make the second commit. will try again.
+ 
+ Results:
+ Only commited changes are pushed. The above statement was not committed before the first push so the changes were not reflected online. And you need to stage (add the f
++
++*changed through new branch
+...skipping...
+diff --git a/README.md b/README.md
+index 31b67b1..39e8be5 100644
+--- a/README.md
++++ b/README.md
+@@ -5,7 +5,9 @@ My first attempt at Git Version Control
+ Learning the basics of Git. Committing and pushing. Previous line committed but not pushed.
+ Will now push the changes.
+ 
+-confusion of staging before committing. Required me to add the file again after the first commit to make the second commit. will try again.
++**confusion of staging before committing. Required me to add the file again after the first commit to make the second commit. will try again.
+ 
+ Results:
+ Only commited changes are pushed. The above statement was not committed before the first push so the changes were not reflected online. And you need to stage (add the f
++
++*changed through new branch
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git log
+commit ebeb8c476c93ef2285a4d76efff257ab51f1c15f
+Author: rOhanX96 <rohanx96@gmail.com>
+Date:   Thu Dec 17 19:58:55 2015 +0530
+
+    First commit in new branch
+
+commit dc84110d39ead3b806c02b4e150c9e9a667b8e1e
+Author: rOhanX96 <rohanx96@gmail.com>
+Date:   Thu Dec 17 19:45:00 2015 +0530
+
+    new directory
+
+commit 85dab5a3b43e50d0cf1f8d65b00beecb957d592e
+Author: rOhanX96 <rohanx96@gmail.com>
+Date:   Thu Dec 17 19:35:14 2015 +0530
+
+    Result
+
+commit 01f25243316008b568d14b1afd26630c15182d51
+Author: rOhanX96 <rohanx96@gmail.com>
+Date:   Thu Dec 17 19:16:15 2015 +0530
+
+    Push changes
+
+commit bde704bbfd5ce27f854126ae1f3266aae984314e
+Author: rOhanX96 <rohanx96@gmail.com>
+Date:   Thu Dec 17 19:09:00 2015 +0530
+
+    My first commit
+
+commit a76c299ac64f92da43b776f5c01df44adf240eac
+Author: Rohan Agarwal <rohanx96@gmail.com>
+Date:   Thu Dec 17 18:59:09 2015 +0530
+
+    Initial commit
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ gedit TestFolder/secondFile 
+
+** (gedit:13795): WARNING **: Couldn't connect to accessibility bus: Failed to connect to socket /tmp/dbus-z1cgC7dOWz: Connection refused
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git diff master test-branch
+diff --git a/README.md b/README.md
+index 31b67b1..39e8be5 100644
+--- a/README.md
++++ b/README.md
+@@ -5,7 +5,9 @@ My first attempt at Git Version Control
+ Learning the basics of Git. Committing and pushing. Previous line committed but not pushed.
+ Will now push the changes.
+ 
+-confusion of staging before committing. Required me to add the file again after the first commit to make the second commit. will try again.
++**confusion of staging before committing. Required me to add the file again after the first commit to make the second commit. will try again.
+ 
+ Results:
+ Only commited changes are pushed. The above statement was not committed before the first push so the changes were not reflected online. And you need to stage (add the f
++
++*changed through new branch
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git add TestFolder
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git commit -m "Checking differences between master and new branch"
+[test-branch 6e4e2a7] Checking differences between master and new branch
+ 2 files changed, 3 insertions(+)
+ create mode 100644 TestFolder/secondFile~
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git diff master test-branch
+diff --git a/README.md b/README.md
+index 31b67b1..39e8be5 100644
+--- a/README.md
++++ b/README.md
+@@ -5,7 +5,9 @@ My first attempt at Git Version Control
+ Learning the basics of Git. Committing and pushing. Previous line committed but not pushed.
+ Will now push the changes.
+ 
+-confusion of staging before committing. Required me to add the file again after the first commit to make the second commit. will try again.
++**confusion of staging before committing. Required me to add the file again after the first commit to make the second commit. will try again.
+ 
+ Results:
+ Only commited changes are pushed. The above statement was not committed before the first push so the changes were not reflected online. And you need to stage (add the f
++
++*changed through new branch
+diff --git a/TestFolder/secondFile b/TestFolder/secondFile
+index 2377997..57fda4e 100644
+--- a/TestFolder/secondFile
++++ b/TestFolder/secondFile
+@@ -1 +1,3 @@
+ My second file inside a new directory inside the main directory to see how it responds to this change.
++
++** changed in new branch. Finding how changes in different files are represented.
+diff --git a/TestFolder/secondFile~ b/TestFolder/secondFile~
+new file mode 100644
+index 0000000..2377997
+--- /dev/null
++++ b/TestFolder/secondFile~
+@@ -0,0 +1 @@
++My second file inside a new directory inside the main directory to see how it responds to this change.
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ man git 
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git help push
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git help
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p|--paginate|--no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+The most commonly used git commands are:
+   add        Add file contents to the index
+   bisect     Find by binary search the change that introduced a bug
+   branch     List, create, or delete branches
+   checkout   Checkout a branch or paths to the working tree
+   clone      Clone a repository into a new directory
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   fetch      Download objects and refs from another repository
+   grep       Print lines matching a pattern
+   init       Create an empty Git repository or reinitialize an existing one
+   log        Show commit logs
+   merge      Join two or more development histories together
+   mv         Move or rename a file, a directory, or a symlink
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+   rebase     Forward-port local commits to the updated upstream head
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+   show       Show various types of objects
+   status     Show the working tree status
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+'git help -a' and 'git help -g' lists available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git help config
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git config --local
+usage: git config [options]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color <slot>    find the color configured: [default]
+    --get-colorbool <slot>
+                          find the color setting: [stdout-is-tty]
+
+Type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+
+Other
+    -z, --null            terminate values with NUL byte
+    --includes            respect include directives on lookup
+
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git config --global
+usage: git config [options]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color <slot>    find the color configured: [default]
+    --get-colorbool <slot>
+                          find the color setting: [stdout-is-tty]
+
+Type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+
+Other
+    -z, --null            terminate values with NUL byte
+    --includes            respect include directives on lookup
+
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git config --global push.default
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git config --global push.default matching
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git status
+On branch test-branch
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md~
+
+nothing added to commit but untracked files present (use "git add" to track)
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git diff master test-branch
+diff --git a/README.md b/README.md
+index 31b67b1..39e8be5 100644
+--- a/README.md
++++ b/README.md
+@@ -5,7 +5,9 @@ My first attempt at Git Version Control
+ Learning the basics of Git. Committing and pushing. Previous line committed but not pushed.
+ Will now push the changes.
+ 
+-confusion of staging before committing. Required me to add the file again after the first commit to make the second commit. will try again.
++**confusion of staging before committing. Required me to add the file again after the first commit to make the second commit. will try again.
+ 
+ Results:
+ Only commited changes are pushed. The above statement was not committed before the first push so the changes were not reflected online. And you need to stage (add the f
++
++*changed through new branch
+diff --git a/TestFolder/secondFile b/TestFolder/secondFile
+index 2377997..57fda4e 100644
+--- a/TestFolder/secondFile
++++ b/TestFolder/secondFile
+@@ -1 +1,3 @@
+ My second file inside a new directory inside the main directory to see how it responds to this change.
++
++** changed in new branch. Finding how changes in different files are represented.
+diff --git a/TestFolder/secondFile~ b/TestFolder/secondFile~
+new file mode 100644
+index 0000000..2377997
+--- /dev/null
++++ b/TestFolder/secondFile~
+@@ -0,0 +1 @@
++My second file inside a new directory inside the main directory to see how it responds to this change.
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git push
+Username for 'https://github.com': rohanx96
+Password for 'https://rohanx96@github.com': 
+Counting objects: 11, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 824 bytes | 0 bytes/s, done.
+Total 7 (delta 1), reused 0 (delta 0)
+To https://github.com/rohanx96/Learning-Git.git
+   dc84110..6e4e2a7  test-branch -> test-branch
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git diff master test-branch
+diff --git a/README.md b/README.md
+index 31b67b1..39e8be5 100644
+--- a/README.md
++++ b/README.md
+@@ -5,7 +5,9 @@ My first attempt at Git Version Control
+ Learning the basics of Git. Committing and pushing. Previous line committed but not pushed.
+ Will now push the changes.
+ 
+-confusion of staging before committing. Required me to add the file again after the first commit to make the second commit. will try again.
++**confusion of staging before committing. Required me to add the file again after the first commit to make the second commit. will try again.
+ 
+ Results:
+ Only commited changes are pushed. The above statement was not committed before the first push so the changes were not reflected online. And you need to stage (add the f
++
++*changed through new branch
+diff --git a/TestFolder/secondFile b/TestFolder/secondFile
+index 2377997..57fda4e 100644
+--- a/TestFolder/secondFile
++++ b/TestFolder/secondFile
+@@ -1 +1,3 @@
+ My second file inside a new directory inside the main directory to see how it responds to this change.
++
++** changed in new branch. Finding how changes in different files are represented.
+diff --git a/TestFolder/secondFile~ b/TestFolder/secondFile~
+new file mode 100644
+index 0000000..2377997
+--- /dev/null
++++ b/TestFolder/secondFile~
+@@ -0,0 +1 @@
++My second file inside a new directory inside the main directory to see how it responds to this change.
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ 
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ gedit README.md
+
+** (gedit:14383): WARNING **: Couldn't connect to accessibility bus: Failed to connect to socket /tmp/dbus-z1cgC7dOWz: Connection refused
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git add README.md
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git status
+On branch test-branch
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md~
+
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ gedit README.md
+
+** (gedit:14519): WARNING **: Couldn't connect to accessibility bus: Failed to connect to socket /tmp/dbus-z1cgC7dOWz: Connection refused
+^C
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git status
+On branch test-branch
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   README.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md~
+
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git add README.md
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git status
+On branch test-branch
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md~
+
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git commit -m "Result branching"
+[test-branch 45b79a3] Result branching
+ 1 file changed, 10 insertions(+)
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git diff master test-branch
+diff --git a/README.md b/README.md
+index 31b67b1..5ee7c99 100644
+--- a/README.md
++++ b/README.md
+@@ -5,7 +5,19 @@ My first attempt at Git Version Control
+ Learning the basics of Git. Committing and pushing. Previous line committed but not pushed.
+ Will now push the changes.
+ 
+-confusion of staging before committing. Required me to add the file again after the first commit to make the second commit. will try again.
++**confusion of staging before committing. Required me to add the file again after the first commit to make the second commit. will try again.
+ 
+ Results:
+ Only commited changes are pushed. The above statement was not committed before the first push so the changes were not reflected online. And you need to stage (add the f
++
++*changed through new branch
++
++Results:
++Creating a branch makes changes to local files but allows you to create separate branch online where you may or may not merge with the master branch. You commit normall
++
++Matchng (set using command git config --global push.config matching) : Git will push the changes to the branch with the same name in online repostory and not the master
++Simple (default set using push.config simple): Gitwill push changes to the branch wfrom which you have pulled or cloned( may or may not be master branch)
++
++Branching allows you to work on your code and make changes but you may dicard the changes if they do not work by not pushing the changes to master branch. Thus it is li
++
++i will be pushing this result using simple and hence this result should not be available in the test-branch
+diff --git a/TestFolder/secondFile b/TestFolder/secondFile
+index 2377997..57fda4e 100644
+--- a/TestFolder/secondFile
++++ b/TestFolder/secondFile
+@@ -1 +1,3 @@
+ My second file inside a new directory inside the main directory to see how it responds to this change.
++
++** changed in new branch. Finding how changes in different files are represented.
+diff --git a/TestFolder/secondFile~ b/TestFolder/secondFile~
+new file mode 100644
+index 0000000..2377997
+--- /dev/null
++++ b/TestFolder/secondFile~
+@@ -0,0 +1 @@
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git config --global push.default simple
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git push
+fatal: The current branch test-branch has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin test-branch
+
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git push --set-upstream origin master
+Username for 'https://github.com': rOhanX96
+Password for 'https://rOhanX96@github.com': 
+Branch master set up to track remote branch master from origin.
+Everything up-to-date
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git status
+On branch test-branch
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md~
+
+nothing added to commit but untracked files present (use "git add" to track)
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git diff master test-branch
+diff --git a/README.md b/README.md
+index 31b67b1..5ee7c99 100644
+--- a/README.md
++++ b/README.md
+@@ -5,7 +5,19 @@ My first attempt at Git Version Control
+ Learning the basics of Git. Committing and pushing. Previous line committed but not pushed.
+ Will now push the changes.
+ 
+-confusion of staging before committing. Required me to add the file again after the first commit to make the second commit. will try again.
++**confusion of staging before committing. Required me to add the file again after the first commit to make the second commit. will try again.
+ 
+ Results:
+ Only commited changes are pushed. The above statement was not committed before the first push so the changes were not reflected online. And you need to stage (add the f
++
++*changed through new branch
++
++Results:
++Creating a branch makes changes to local files but allows you to create separate branch online where you may or may not merge with the master branch. You commit normall
++
++Matchng (set using command git config --global push.config matching) : Git will push the changes to the branch with the same name in online repostory and not the master
++Simple (default set using push.config simple): Gitwill push changes to the branch wfrom which you have pulled or cloned( may or may not be master branch)
++
++Branching allows you to work on your code and make changes but you may dicard the changes if they do not work by not pushing the changes to master branch. Thus it is li
++
++i will be pushing this result using simple and hence this result should not be available in the test-branch
+diff --git a/TestFolder/secondFile b/TestFolder/secondFile
+index 2377997..57fda4e 100644
+--- a/TestFolder/secondFile
++++ b/TestFolder/secondFile
+@@ -1 +1,3 @@
+ My second file inside a new directory inside the main directory to see how it responds to this change.
++
++** changed in new branch. Finding how changes in different files are represented.
+diff --git a/TestFolder/secondFile~ b/TestFolder/secondFile~
+new file mode 100644
+index 0000000..2377997
+--- /dev/null
++++ b/TestFolder/secondFile~
+@@ -0,0 +1 @@
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md~
+
+nothing added to commit but untracked files present (use "git add" to track)
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git diff master test-branch
+diff --git a/README.md b/README.md
+index 31b67b1..5ee7c99 100644
+--- a/README.md
++++ b/README.md
+@@ -5,7 +5,19 @@ My first attempt at Git Version Control
+ Learning the basics of Git. Committing and pushing. Previous line committed but not pushed.
+ Will now push the changes.
+ 
+-confusion of staging before committing. Required me to add the file again after the first commit to make the second commit. will try again.
++**confusion of staging before committing. Required me to add the file again after the first commit to make the second commit. will try again.
+ 
+ Results:
+ Only commited changes are pushed. The above statement was not committed before the first push so the changes were not reflected online. And you need to stage (add the f
++
++*changed through new branch
++
++Results:
++Creating a branch makes changes to local files but allows you to create separate branch online where you may or may not merge with the master branch. You commit normall
++
++Matchng (set using command git config --global push.config matching) : Git will push the changes to the branch with the same name in online repostory and not the master
++Simple (default set using push.config simple): Gitwill push changes to the branch wfrom which you have pulled or cloned( may or may not be master branch)
++
++Branching allows you to work on your code and make changes but you may dicard the changes if they do not work by not pushing the changes to master branch. Thus it is li
++
++i will be pushing this result using simple and hence this result should not be available in the test-branch
+diff --git a/TestFolder/secondFile b/TestFolder/secondFile
+index 2377997..57fda4e 100644
+--- a/TestFolder/secondFile
++++ b/TestFolder/secondFile
+@@ -1 +1,3 @@
+ My second file inside a new directory inside the main directory to see how it responds to this change.
++
++** changed in new branch. Finding how changes in different files are represented.
+diff --git a/TestFolder/secondFile~ b/TestFolder/secondFile~
+new file mode 100644
+index 0000000..2377997
+--- /dev/null
++++ b/TestFolder/secondFile~
+@@ -0,0 +1 @@
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ 
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git merge test-branch
+Updating dc84110..45b79a3
+Fast-forward
+ README.md              | 14 +++++++++++++-
+ TestFolder/secondFile  |  2 ++
+ TestFolder/secondFile~ |  1 +
+ 3 files changed, 16 insertions(+), 1 deletion(-)
+ create mode 100644 TestFolder/secondFile~
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md~
+
+nothing added to commit but untracked files present (use "git add" to track)
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git push
+Username for 'https://github.com': rohanx96
+Password for 'https://rohanx96@github.com': 
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 958 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/rohanx96/Learning-Git.git
+   dc84110..45b79a3  master -> master
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ gedit README.md
+
+** (gedit:14922): WARNING **: Couldn't connect to accessibility bus: Failed to connect to socket /tmp/dbus-z1cgC7dOWz: Connection refused
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ gedit add README.md
+
+** (gedit:14961): WARNING **: Couldn't connect to accessibility bus: Failed to connect to socket /tmp/dbus-z1cgC7dOWz: Connection refused
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git add README.md
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git commit -m "simple push error so merging"
+[master 9996ecd] simple push error so merging
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git push
+Username for 'https://github.com': rohanx96
+Password for 'https://rohanx96@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/rohanx96/Learning-Git.git/'
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git push
+Username for 'https://github.com': rohanx96
+Password for 'https://rohanx96@github.com': 
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 447 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To https://github.com/rohanx96/Learning-Git.git
+   45b79a3..9996ecd  master -> master
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git clone 
+.git/       README.md   README.md~  TestFolder/ 
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git clone 
+.git/       README.md   README.md~  TestFolder/ 
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git clone 
+.git/       README.md   README.md~  TestFolder/ 
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git clone 
+.git/       README.md   README.md~  TestFolder/ 
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git
+git                 git-receive-pack    git-shell           git-upload-archive  git-upload-pack     
+rose@rose-VPCEH15EN:~/GitHub/Learning-Git$ git pull https://github.com/rohanx96/Learning-Git.git
+From https://github.com/rohanx96/Learning-Git
+ * branch            HEAD       -> FETCH_HEAD
+Already up-to-date.
+

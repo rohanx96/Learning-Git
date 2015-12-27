@@ -1,0 +1,39 @@
+git revert
+
+The git revert command undoes a committed snapshot. But, instead of removing the commit from the project history, it figures out how to undo the changes introduced by the commit and appends a new commit with the resulting content.
+Usage
+git revert <commit>
+Generate a new commit that undoes all of the changes introduced in <commit>, then apply it to the current branch.
+
+Discussion
+Reverting should be used when you want to remove an entire commit from your project history. This can be useful, for example, if you’re tracking down a bug and find that it was introduced by a single commit. Instead of manually going in, fixing it, and committing a new snapshot, you can use git revert to automatically do all of this for you.
+
+Reverting vs. Resetting
+It's important to understand that git revert undoes a single commit—it does not “revert” back to the previous state of a project by removing all subsequent commits. In Git, this is actually called a reset, not a revert.
+Reverting has two important advantages over resetting. First, it doesn’t change the project history, which makes it a “safe” operation for commits that have already been published to a shared repository. Second, git revert is able to target an individual commit at an arbitrary point in the history, whereas git reset can only work backwards from the current commit. For example, if you wanted to undo an old commit with git reset, you would have to remove all of the commits that occurred after the target commit, remove it, then re-commit all of the subsequent commits. Needless to say, this is not an elegant undo solution.
+
+git reset
+
+When you undo with git reset there is no way to retrieve the original copy—it is a permanent undo. Care must be taken when using this tool, as it’s one of the only Git commands that has the potential to lose your work.
+It can be used to remove committed snapshots, although it’s more often used to undo changes in the staging area and the working directory. IN EITHER CASE, IT SHOULD ONLY BE USED TO UNDO LOCAL CHANGES—YOU SHOULD NEVER RESET SNAPSHOTS THAT HAVE BEEN SHARED WITH OTHER DEVELOPERS.
+
+Usage
+git reset <file>
+This unstages a file without overwriting any changes.
+
+git reset
+Reset the staging area to match the most recent commit, but leave the working directory unchanged. This unstages all files without overwriting any changes, giving you the opportunity to re-build the staged snapshot from scratch.
+
+git reset --hard
+Reset the staging area and the working directory to match the most recent commit. The --hard flag tells Git to overwrite all changes in the working directory, too. Put another way: this destroys all uncommitted changes, so make sure you really want to throw away your local developments before using it.
+
+git reset <commit>
+Move the current branch tip backward to <commit>, reset the staging area to match, but leave the working directory alone. All changes made since <commit> will reside in the working directory, but the commits after the specified commit will be lost and you can recommit.
+
+git reset --hard <commit>
+Move the current branch tip backward to <commit> and reset both the staging area and the working directory to match. This obliterates not only the uncommitted changes, but all commits after <commit>, as well.
+
+Discussion
+All of the above invocations are used to remove changes from a repository. Without the --hard flag, git reset is a way to clean up a repository by unstaging changes or uncommitting a series of snapshots and re-building them from scratch. The --hard flag comes in handy when an experiment has gone horribly wrong and you need a clean slate to work with.
+
+Whereas reverting is designed to safely undo a public commit, git reset is designed to undo local changes. 
